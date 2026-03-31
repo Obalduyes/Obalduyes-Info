@@ -1,163 +1,200 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <link rel="icon" href="logo_obalduyes.png" sizes="48x48" type="image/png" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="dark" />
-    <meta name="theme-color" content="#0b0b0c" />
-    <title>Obalduyes | First Lego League Team</title>
-    <link rel="stylesheet" href="styles.css" />
-    <style>
-      /* Стили для эмодзи аватаров */
-      .emoji-avatar {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        background-color: #2a2a2a;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 40px;
-      }
-      .members {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px;
-      }
-      .member.cardish {
-        flex: 1 1 200px;
-        background-color: #1a1a1a;
-        padding: 12px;
-        border-radius: 8px;
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <main id="top">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#0b0b0c" />
+  <title>Obalduyes | First Lego League Team</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="logo_obalduyes.png" sizes="48x48" type="image/png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #0b0b0c;
+      color: #fff;
+    }
 
-      <!-- Team Members Section -->
-      <section class="section" id="team" aria-labelledby="teamTitle">
-        <div class="container">
-          <header class="section__header reveal" data-reveal>
-            <h2 class="section__title" id="teamTitle">Team Members</h2>
-            <p class="section__subtitle">
-              A small, focused crew with roles that keep our workflow calm and efficient.
-            </p>
-          </header>
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
 
-          <div class="members reveal" data-reveal">
-            <article class="member cardish">
-              <div class="emoji-avatar">👑</div>
-              <div class="member__info">
-                <div class="member__name">Antar</div>
-                <div class="member__role">Team Leader / Cader</div>
-              </div>
-            </article>
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
 
-            <article class="member cardish">
-              <div class="emoji-avatar">🛠️</div>
-              <div class="member__info">
-                <div class="member__name">Sazhar</div>
-                <div class="member__role">Engineering / Manager</div>
-              </div>
-            </article>
+    p {
+      font-size: 1rem;
+      color: #aaa;
+    }
 
-            <article class="member cardish">
-              <div class="emoji-avatar">📚</div>
-              <div class="member__info">
-                <div class="member__name">Alibi</div>
-                <div class="member__role">Research / Documentation</div>
-              </div>
-            </article>
+    .members {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 20px;
+    }
 
-            <article class="member cardish">
-              <div class="emoji-avatar">🤖</div>
-              <div class="member__info">
-                <div class="member__name">Ansar</div>
-                <div class="member__role">Engineer / Robogame</div>
-              </div>
-            </article>
+    .member.cardish {
+      flex: 1 1 200px;
+      background-color: #1a1a1a;
+      padding: 12px;
+      border-radius: 8px;
+      text-align: center;
+    }
 
-            <article class="member cardish">
-              <div class="emoji-avatar">💻</div>
-              <div class="member__info">
-                <div class="member__name">Insar</div>
-                <div class="member__role">Coding / Robogame</div>
-              </div>
-            </article>
+    .emoji-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #2a2a2a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      margin: auto;
+      margin-bottom: 10px;
+    }
 
-            <article class="member cardish">
-              <div class="emoji-avatar">🌐</div>
-              <div class="member__info">
-                <div class="member__name">Aziz</div>
-                <div class="member__role">Research / Site maker</div>
-              </div>
-            </article>
+    .contactBar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
 
-            <article class="member cardish">
-              <div class="emoji-avatar">💾</div>
-              <div class="member__info">
-                <div class="member__name">Nurali</div>
-                <div class="member__role">Coding / Robogame</div>
-              </div>
-            </article>
-          </div>
+    .btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      background-color: #444;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #666;
+    }
+
+    footer {
+      padding: 20px;
+      background-color: #111;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+<main id="top">
+
+  <!-- Team Members Section -->
+  <section class="section" id="team" aria-labelledby="teamTitle">
+    <header class="section__header">
+      <h2 id="teamTitle">Team Members</h2>
+      <p>A small, focused crew with roles that keep our workflow calm and efficient.</p>
+    </header>
+
+    <div class="members">
+      <article class="member cardish">
+        <div class="emoji-avatar">👑</div>
+        <div class="member__info">
+          <div class="member__name">Antar</div>
+          <div class="member__role">Team Leader / Cader</div>
         </div>
-      </section>
+      </article>
 
-      <!-- Contact Section -->
-      <section class="section section--contact" id="contact" aria-labelledby="contactTitle">
-        <div class="container">
-          <header class="section__header reveal" data-reveal>
-            <h2 class="section__title" id="contactTitle">Contact</h2>
-            <p class="section__subtitle">
-              Minimal, direct ways to connect. Update the links below with your team details.
-            </p>
-          </header>
-
-          <div class="contactBar reveal" data-reveal>
-            <a class="btn btn--primary btn--wide" id="emailBtn" href="mailto:team@obalduyes.org">
-              <span class="btn__icon" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4 7.5C4 6.1 5.1 5 6.5 5h11C19.9 5 21 6.1 21 7.5v9C21 18.9 19.9 20 18.5 20h-11C5.1 20 4 18.9 4 17.5v-10Z" stroke="currentColor" stroke-width="1.6" />
-                  <path d="M6.5 7l5.5 4.6L17.5 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </span>
-              <span class="btn__text">Email</span>
-            </a>
-
-            <a class="btn btn--secondary btn--wide" id="youtubeBtn" href="https://www.youtube.com/" target="_blank" rel="noreferrer">
-              <span class="btn__icon" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 15l5-3-5-3v6Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
-                  <path d="M4.5 8.5C4.8 7 6 6 7.6 6h8.8c1.6 0 2.8 1 3.1 2.5.2 1 .2 2.1 0 3.1-.3 1.5-1.5 2.4-3.1 2.4H7.6c-1.6 0-2.8-.9-3.1-2.4-.2-1-.2-2.1 0-3.1Z" stroke="currentColor" stroke-width="1.6" />
-                </svg>
-              </span>
-              <span class="btn__text">YouTube</span>
-            </a>
-
-            <button class="btn btn--ghost btn--wide" id="translatorBtn" type="button">
-              <span class="btn__text">Translator</span>
-            </button>
-          </div>
+      <article class="member cardish">
+        <div class="emoji-avatar">🛠️</div>
+        <div class="member__info">
+          <div class="member__name">Sazhar</div>
+          <div class="member__role">Engineering / Manager</div>
         </div>
-      </section>
+      </article>
 
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container footer__inner">
-        <div class="footer__brand">
-          <span class="footer__dot" aria-hidden="true"></span>
-          <span>Obalduyes</span>
+      <article class="member cardish">
+        <div class="emoji-avatar">📚</div>
+        <div class="member__info">
+          <div class="member__name">Alibi</div>
+          <div class="member__role">Research / Documentation</div>
         </div>
-        <div class="footer__meta">Modern portfolio for an FLL team.</div>
-      </div>
-    </footer>
+      </article>
 
-    <script src="script.js" defer></script>
-  </body>
+      <article class="member cardish">
+        <div class="emoji-avatar">🤖</div>
+        <div class="member__info">
+          <div class="member__name">Ansar</div>
+          <div class="member__role">Engineer / Robogame</div>
+        </div>
+      </article>
+
+      <article class="member cardish">
+        <div class="emoji-avatar">💻</div>
+        <div class="member__info">
+          <div class="member__name">Insar</div>
+          <div class="member__role">Coding / Robogame</div>
+        </div>
+      </article>
+
+      <article class="member cardish">
+        <div class="emoji-avatar">🌐</div>
+        <div class="member__info">
+          <div class="member__name">Aziz</div>
+          <div class="member__role">Research / Site maker</div>
+        </div>
+      </article>
+
+      <article class="member cardish">
+        <div class="emoji-avatar">💾</div>
+        <div class="member__info">
+          <div class="member__name">Nurali</div>
+          <div class="member__role">Coding / Robogame</div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact" aria-labelledby="contactTitle" style="margin-top: 60px;">
+    <header class="section__header">
+      <h2 id="contactTitle">Contact</h2>
+      <p>Minimal, direct ways to connect. Update the links below with your team details.</p>
+    </header>
+
+    <div class="contactBar">
+      <a class="btn" href="mailto:team@obalduyes.org">
+        Email
+      </a>
+
+      <a class="btn" href="https://www.youtube.com/" target="_blank" rel="noreferrer">
+        YouTube
+      </a>
+
+      <button class="btn" type="button">
+        Translator
+      </button>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+  <div>
+    Obalduyes | Modern portfolio for an FLL team.
+  </div>
+</footer>
+
+</body>
 </html>
