@@ -1,130 +1,55 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="icon" href="logo_obalduyes.png" sizes="48x48" type="image/png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark" />
     <meta name="theme-color" content="#0b0b0c" />
-    <link rel="icon" href="logo_obalduyes.png" sizes="48x48" type="image/png" />
     <title>Obalduyes | First Lego League Team</title>
-
+    <link rel="stylesheet" href="styles.css" />
     <style>
-      body { margin: 0; font-family: sans-serif; background: #0b0b0c; color: #fff; }
-      a { color: #1e90ff; text-decoration: none; }
-      .container { width: 90%; max-width: 1200px; margin: 0 auto; }
-      header, section, footer { padding: 2rem 0; }
-      h1, h2, h3 { margin: 0 0 0.5rem 0; }
-      p { margin: 0.5rem 0; }
-      .members { display: flex; flex-wrap: wrap; gap: 1rem; }
-      .member.cardish { flex: 1 1 calc(33% - 1rem); background: #1c1c1c; border-radius: 12px; padding: 1rem; text-align: center; }
-      .member__avatar { width: 80px; height: 80px; margin: 0 auto 0.5rem; background: #333; border-radius: 50%; }
-      .member__name { font-weight: bold; margin-bottom: 0.2rem; }
-      .member__role { font-size: 0.9rem; color: #aaa; }
-      .cards { display: flex; gap: 1rem; flex-wrap: wrap; }
-      .card { background: #1c1c1c; padding: 1rem; border-radius: 12px; flex: 1 1 calc(33% - 1rem); }
-      .timeline__item { margin-bottom: 1rem; }
+      /* Стили для эмодзи аватаров */
+      .emoji-avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #2a2a2a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+      }
+      .members {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      .member.cardish {
+        flex: 1 1 200px;
+        background-color: #1a1a1a;
+        padding: 12px;
+        border-radius: 8px;
+        text-align: center;
+      }
     </style>
   </head>
-
   <body>
-    <header>
-      <div class="container">
-        <h1>Obalduyes</h1>
-        <nav>
-          <a href="#about">About</a> |
-          <a href="#projects">Projects</a> |
-          <a href="#achievements">Achievements</a> |
-          <a href="#team">Team</a> |
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <!-- Hero Section -->
-      <section id="top">
-        <div class="container">
-          <h2>First Lego League Team</h2>
-          <p>We build solutions with creativity, discipline, and teamwork—turning ideas into real impact.</p>
-          <a href="#about">Learn More</a>
-        </div>
-      </section>
-
-      <!-- About Section -->
-      <section id="about">
-        <div class="container">
-          <h2>About Our Team</h2>
-          <p>Obalduyes is a First Lego League team focused on thoughtful design, clear communication, measurable progress, good ideas and realizations.</p>
-
-          <div>
-            <h3>What is FLL?</h3>
-            <p>First Lego League (FLL) is an inspiring robotics program where teams solve real-world challenges through research, building, and presenting their solutions.</p>
-          </div>
-
-          <div>
-            <h3>Our goals and values</h3>
-            <ul>
-              <li>Design with purpose, test with discipline.</li>
-              <li>Communicate clearly and respectfully.</li>
-              <li>Improve through iteration and feedback.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Projects Section -->
-      <section id="projects">
-        <div class="container">
-          <h2>Our Projects</h2>
-          <div class="cards">
-            <div class="card">
-              <h3>Urban Mobility</h3>
-              <p>Mapping friction points in everyday routes and proposing smarter, safer movement patterns.</p>
-            </div>
-            <div class="card">
-              <h3>Smart Waste Literacy</h3>
-              <p>Building a clear feedback loop that helps people sort and dispose responsibly with less confusion.</p>
-            </div>
-            <div class="card">
-              <h3>Assistive Learning Tools</h3>
-              <p>Designing support materials for better accessibility and clear step-by-step learning.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Achievements Section -->
-      <section id="achievements">
-        <div class="container">
-          <h2>Achievements</h2>
-          <div class="timeline">
-            <div class="timeline__item">
-              <strong>Innovation Award (2025)</strong>
-              <p>Recognized for clear problem framing and iterative prototyping.</p>
-            </div>
-            <div class="timeline__item">
-              <strong>Championship Award (2024)</strong>
-              <p>Was better than anyone else in the competition and showed amazing results.</p>
-            </div>
-            <div class="timeline__item">
-              <strong>Peer Award (2023)</strong>
-              <p>An award for innovation project which was presented well.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+    <main id="top">
 
       <!-- Team Members Section -->
       <section class="section" id="team" aria-labelledby="teamTitle">
         <div class="container">
-          <header class="section__header">
+          <header class="section__header reveal" data-reveal>
             <h2 class="section__title" id="teamTitle">Team Members</h2>
-            <p class="section__subtitle">A small, focused crew with roles that keep our workflow calm and efficient.</p>
+            <p class="section__subtitle">
+              A small, focused crew with roles that keep our workflow calm and efficient.
+            </p>
           </header>
 
-          <div class="members">
+          <div class="members reveal" data-reveal">
             <article class="member cardish">
-              <div class="member__avatar"></div>
+              <div class="emoji-avatar">👑</div>
               <div class="member__info">
                 <div class="member__name">Antar</div>
                 <div class="member__role">Team Leader / Cader</div>
@@ -132,7 +57,7 @@
             </article>
 
             <article class="member cardish">
-              <div class="member__avatar"></div>
+              <div class="emoji-avatar">🛠️</div>
               <div class="member__info">
                 <div class="member__name">Sazhar</div>
                 <div class="member__role">Engineering / Manager</div>
@@ -140,7 +65,7 @@
             </article>
 
             <article class="member cardish">
-              <div class="member__avatar"></div>
+              <div class="emoji-avatar">📚</div>
               <div class="member__info">
                 <div class="member__name">Alibi</div>
                 <div class="member__role">Research / Documentation</div>
@@ -148,7 +73,7 @@
             </article>
 
             <article class="member cardish">
-              <div class="member__avatar"></div>
+              <div class="emoji-avatar">🤖</div>
               <div class="member__info">
                 <div class="member__name">Ansar</div>
                 <div class="member__role">Engineer / Robogame</div>
@@ -156,7 +81,7 @@
             </article>
 
             <article class="member cardish">
-              <div class="member__avatar"></div>
+              <div class="emoji-avatar">💻</div>
               <div class="member__info">
                 <div class="member__name">Insar</div>
                 <div class="member__role">Coding / Robogame</div>
@@ -164,7 +89,7 @@
             </article>
 
             <article class="member cardish">
-              <div class="member__avatar"></div>
+              <div class="emoji-avatar">🌐</div>
               <div class="member__info">
                 <div class="member__name">Aziz</div>
                 <div class="member__role">Research / Site maker</div>
@@ -172,7 +97,7 @@
             </article>
 
             <article class="member cardish">
-              <div class="member__avatar"></div>
+              <div class="emoji-avatar">💾</div>
               <div class="member__info">
                 <div class="member__name">Nurali</div>
                 <div class="member__role">Coding / Robogame</div>
@@ -183,23 +108,56 @@
       </section>
 
       <!-- Contact Section -->
-      <section id="contact">
+      <section class="section section--contact" id="contact" aria-labelledby="contactTitle">
         <div class="container">
-          <h2>Contact</h2>
-          <p>Minimal, direct ways to connect. Update the links below with your team details.</p>
-          <a href="mailto:team@obalduyes.org">Email</a> |
-          <a href="https://www.instagram.com/obalduyes_fll_challenge?utm_source=qr&igsh=MWh2cDRwYThqN200dA==" target="_blank">Instagram</a> |
-          <a href="https://www.tiktok.com/@obalduyes" target="_blank">TikTok</a> |
-          <a href="https://telegram.me/obalduyesbot" target="_blank">Telegram Bot</a>
+          <header class="section__header reveal" data-reveal>
+            <h2 class="section__title" id="contactTitle">Contact</h2>
+            <p class="section__subtitle">
+              Minimal, direct ways to connect. Update the links below with your team details.
+            </p>
+          </header>
+
+          <div class="contactBar reveal" data-reveal>
+            <a class="btn btn--primary btn--wide" id="emailBtn" href="mailto:team@obalduyes.org">
+              <span class="btn__icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 7.5C4 6.1 5.1 5 6.5 5h11C19.9 5 21 6.1 21 7.5v9C21 18.9 19.9 20 18.5 20h-11C5.1 20 4 18.9 4 17.5v-10Z" stroke="currentColor" stroke-width="1.6" />
+                  <path d="M6.5 7l5.5 4.6L17.5 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <span class="btn__text">Email</span>
+            </a>
+
+            <a class="btn btn--secondary btn--wide" id="youtubeBtn" href="https://www.youtube.com/" target="_blank" rel="noreferrer">
+              <span class="btn__icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 15l5-3-5-3v6Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+                  <path d="M4.5 8.5C4.8 7 6 6 7.6 6h8.8c1.6 0 2.8 1 3.1 2.5.2 1 .2 2.1 0 3.1-.3 1.5-1.5 2.4-3.1 2.4H7.6c-1.6 0-2.8-.9-3.1-2.4-.2-1-.2-2.1 0-3.1Z" stroke="currentColor" stroke-width="1.6" />
+                </svg>
+              </span>
+              <span class="btn__text">YouTube</span>
+            </a>
+
+            <button class="btn btn--ghost btn--wide" id="translatorBtn" type="button">
+              <span class="btn__text">Translator</span>
+            </button>
+          </div>
         </div>
       </section>
+
     </main>
 
     <!-- Footer -->
-    <footer>
-      <div class="container">
-        <p>© Obalduyes | Modern portfolio for an FLL team.</p>
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <span class="footer__dot" aria-hidden="true"></span>
+          <span>Obalduyes</span>
+        </div>
+        <div class="footer__meta">Modern portfolio for an FLL team.</div>
       </div>
     </footer>
+
+    <script src="script.js" defer></script>
   </body>
 </html>
